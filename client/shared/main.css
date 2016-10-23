@@ -1,0 +1,21 @@
+#loadPostsBtn {
+	width: 50%;
+	margin: auto;
+}
+
+#older {
+	margin-left: 15%;
+}
+
+#newer {
+	margin-right: 15%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a:hover { 
+    text-decoration: none;
+}
