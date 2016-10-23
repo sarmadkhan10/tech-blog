@@ -3,5 +3,11 @@ AutoForm.hooks({
     onSuccess: function(operation, post) {
       Router.go('singlePost', post);
     }
+  },
+
+  updatePostForm: {
+    onSuccess: function(operation, post) {
+      Router.go('singlePost', post);
+    }
   }
 });

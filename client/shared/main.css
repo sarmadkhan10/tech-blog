@@ -19,3 +19,11 @@ img {
 a:hover { 
     text-decoration: none;
 }
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-size: 120%;
+}
