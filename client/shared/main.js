@@ -6,7 +6,7 @@ import './main.html';
 
 Template.mainLayout.created = function() {
 	Session.set('limit', 5);
-}
+},
 
 //Template.loadPosts.events({
 //	"click .loadPostsBtn": function(event) {
@@ -37,4 +37,12 @@ Template.loadPostsDouble.events({
 
 		Router.go('pages', {page_no: current_page-1});
 	}
+});
+
+Template.postPage.onRendered(function() {
+	document.title = this.data.title;
+});
+
+Template.postsList.onRendered(function() {
+	document.title = "techtoc";
 });
