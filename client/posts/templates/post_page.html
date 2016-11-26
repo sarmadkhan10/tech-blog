@@ -1,8 +1,12 @@
 <template name="postPage">
-  <h2>{{title}}</h2>
+  <h2 class="postTitle">{{title}}</h2>
   <p>{{{body}}}</p>
-  <p>by {{author}}</p>
+  {{> author}}
   {{> shareit}}
+  <br>
+  <div class="comment-section">
+    {{> commentsBox id=documentId }}
+  </div>
   <br>
   {{#linkTo route='editPost'}}
   	<button type="button" class="btn btn-secondary btn-lg pull-left" id="edit_post">Edit Post</button>

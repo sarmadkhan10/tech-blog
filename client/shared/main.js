@@ -39,10 +39,23 @@ Template.loadPostsDouble.events({
 	}
 });
 
+Template.postPage.helpers({
+	documentId: function(){
+		var cont = Iron.controller();
+		var docId = cont.state.get('document_id');
+		console.log(docId);
+		return docId;
+	}
+});
+
 Template.postPage.onRendered(function() {
 	document.title = this.data.title;
 });
 
 Template.postsList.onRendered(function() {
 	document.title = "techtoc";
+});
+
+Comments.ui.config({
+   template: 'bootstrap' // or ionic, semantic-ui
 });
